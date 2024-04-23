@@ -17,5 +17,6 @@ try {
 
 } catch(err) {}
 
-
+//test
+exports.monthOfTheYear = monthOfTheYear;
 exports.dayOfTheWeek = dayOfTheWeek;
