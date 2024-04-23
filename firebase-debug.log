@@ -44,3 +44,55 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [info] i  hosting: 127.0.0.1 - - [23/Apr/2024:07:48:45 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:07:48:45 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
 [info] i  hosting: 127.0.0.1 - - [23/Apr/2024:07:48:45 +0000] "GET /pug.jpg HTTP/1.1" 200 770433 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:07:48:45 +0000] \"GET /pug.jpg HTTP/1.1\" 200 770433 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
 [info] i  hosting: 127.0.0.1 - - [23/Apr/2024:07:48:46 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:07:48:46 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
+[debug] [2024-04-23T16:29:51.809Z] ----------------------------------------------------------------------
+[debug] [2024-04-23T16:29:51.817Z] Command:       C:\Program Files\nodejs\node.exe E:\Desktop Files\tempolary space\Demo1\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-23T16:29:51.818Z] CLI Version:   13.7.3
+[debug] [2024-04-23T16:29:51.819Z] Platform:      win32
+[debug] [2024-04-23T16:29:51.819Z] Node Version:  v20.10.0
+[debug] [2024-04-23T16:29:51.820Z] Time:          Tue Apr 23 2024 23:29:51 GMT+0700 (เวลาอินโดจีน)
+[debug] [2024-04-23T16:29:51.820Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-23T16:29:52.104Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-23T16:29:52.105Z] > authorizing via signed-in user (p.supanat2547@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-04-23T16:29:52.148Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-23T16:29:52.149Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-23T16:29:52.150Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project cicd-4a53a. This may result in unexpected behavior. 
+[debug] [2024-04-23T16:29:52.163Z] [hub] writing locator at C:\Users\Advice\AppData\Local\Temp\hub-cicd-4a53a.json
+[debug] [2024-04-23T16:29:52.197Z] > refreshing access token with scopes: []
+[debug] [2024-04-23T16:29:52.209Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-23T16:29:52.209Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-23T16:29:52.544Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-23T16:29:52.544Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-23T16:29:52.562Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cicd-4a53a/sites 
+[debug] [2024-04-23T16:29:53.414Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cicd-4a53a/sites 200
+[debug] [2024-04-23T16:29:53.414Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cicd-4a53a/sites {"sites":[{"name":"projects/cicd-4a53a/sites/cicd-4a53a","defaultUrl":"https://cicd-4a53a.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-23T16:29:53.415Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cicd-4a53a/webApps/-/config [none]
+[debug] [2024-04-23T16:29:54.182Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cicd-4a53a/webApps/-/config 200
+[debug] [2024-04-23T16:29:54.182Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cicd-4a53a/webApps/-/config {"projectId":"cicd-4a53a","storageBucket":"cicd-4a53a.appspot.com","apiKey":"AIzaSyD8GKjc7yjGYUmz3q0bpfJf8b81v-jOQLo","authDomain":"cicd-4a53a.firebaseapp.com","messagingSenderId":"427600459600"}
+[debug] [2024-04-23T16:29:54.191Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cicd-4a53a [none]
+[debug] [2024-04-23T16:29:54.526Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cicd-4a53a 200
+[debug] [2024-04-23T16:29:54.527Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cicd-4a53a {"projectId":"cicd-4a53a","projectNumber":"427600459600","displayName":"CICD","name":"projects/cicd-4a53a","resources":{"hostingSite":"cicd-4a53a"},"state":"ACTIVE","etag":"1_6177bc66-9992-41b8-87cc-8d70bdee68f0"}
+[info] i  hosting[cicd-4a53a]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[cicd-4a53a]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [23/Apr/2024:16:30:00 +0000] "GET / HTTP/1.1" 200 385 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:16:30:00 +0000] \"GET / HTTP/1.1\" 200 385 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [23/Apr/2024:16:30:00 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:16:30:00 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [23/Apr/2024:16:30:00 +0000] "GET /pug.jpg HTTP/1.1" 200 770433 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:16:30:00 +0000] \"GET /pug.jpg HTTP/1.1\" 200 770433 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [23/Apr/2024:16:30:00 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [23/Apr/2024:16:30:00 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
